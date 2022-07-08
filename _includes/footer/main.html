@@ -1,0 +1,49 @@
+{% include footer/upper.html %}
+<footer class="usa-footer">
+  <div class="usa-footer__primary-section">
+    <nav class="usa-footer__nav" aria-label="Footer navigation">
+      <ul class="grid-row grid-gap">
+{% for nav_item in site.data.navigation.footer_nav -%}
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="{{site.baseurl}}{{nav_item.url}}">{{nav_item.name}}</a></li>
+{% endfor -%}
+      </ul>
+    </nav>
+  </div>
+
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="usa-footer__contact-links grid-col-auto mobile-lg:grid-col-12">
+          <h3 class="usa-footer__contact-heading">ThriftLine — {{site.thriftline}}</h3>
+          <address class="usa-footer__address">
+            <div class="usa-footer__contact-info grid-row grid-gap">
+              <div class="grid-col-auto">
+                <a href="tel:1-877-968-3778">Phone: {{site.phone}}</a>
+              </div>
+              <div class="grid-col-auto">
+                <a href="tel:1-877-847-4385">TDD: {{site.tdd}}</a>
+              </div>
+              <div class="grid-col-auto">
+                <a href="{{site.baseurl}}/contacts/">Contact Us</a>
+              </div>
+            </div>
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="font-size:70%;float:right;">
+    &copy;
+    <script type="text/javascript">
+                          <!--
+                            var d = new Date();
+                            var curr_year = d.getFullYear();
+
+                            document.write(curr_year );
+                          //-->
+      </script> Federal Retirement Thrift Investment Board
+    </div>
+
+</footer>
