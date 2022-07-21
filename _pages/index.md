@@ -15,7 +15,7 @@ redirect_from:
 #  - getRate();
 ---
 
-## Meeting Minutes
+## Meeting Minutes Archive
 
 This is the meeting minutes archive for the FRTIB monthly board meetings.
 
