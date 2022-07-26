@@ -17,7 +17,7 @@ redirect_from:
 
 ## Meeting Minutes Archive
 
-This is the meeting minutes archive for the FRTIB monthly board meetings. 
+This is the meeting minutes archive for the FRTIB monthly board meetings.
 
 Below are ZIP files containing the main meeting minutes file for each FRTIB advisory board meeting.  The main file for each meeting does contain URL links embedded in the PDF for referenced attachments but they may not work in the years that follow a particular meeting so they are included in the ZIP download.  Any embedded link that works would be to a duplicate copy of the included files.
 
