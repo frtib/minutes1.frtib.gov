@@ -7,10 +7,13 @@ Component to display the main meeting minutes files.
 
 {% include meeting-minutes/get-file-list theCollection='meeting_minutes' -%}
 
+{% assign temp = 'meeting-minutes-button-alt' -%}
 {% assign mmfile = filelist.first -%}
 {% assign fpath = mmfile.path | replace_first: "_", "/" | prepend: site.baseurl -%}
+{% comment -%}
 Most recent board meeting minutes:  <a href="{{fpath}}" target="_blank"><button class="usa-button meeting-minutes-button">{{filelist.first.name}}</button></a>
 Updated: {{page.last_update}}
+{% endcomment -%}
 
 <h3 class="usa-sr-only">Meeting minutes grouped by year, ordered by month, descending</h3>
 {% assign year = '0000' -%}
@@ -32,7 +35,8 @@ Updated: {{page.last_update}}
 {% assign fpath = mmfile.path | replace_first: "_", "/" | prepend: site.baseurl -%}
 <li class="usa-button-group__item">
 {% comment -%}<p><a href="{{fpath}}" target="_blank">{{fname}}</a></p>{% endcomment -%}
-<a href="{{fpath}}" target="_blank"><button class="usa-button meeting-minutes-button">{{fname}}</button></a>
+<a href="{{fpath}}" target="_blank"><button class="usa-button meeting-minutes-button {{temp}}">{{fname}}</button></a>
 </li>
+{% assign temp = '' -%}
 {% endfor -%}
 {{closeDiv}}

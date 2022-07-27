@@ -32,6 +32,12 @@
   min-width: 8em;
   max-width: 8em;
 }
+.meeting-minutes-button {
+  background-color: #981b1e;
+}
+.meeting-minutes-button-alt:hover {
+  background-color: #8b0a03;
+}
 
 @media screen and (min-width: 64em) {
   .alert-button {
