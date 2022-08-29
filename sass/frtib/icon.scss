@@ -13,7 +13,7 @@
 .offsite-link {
   background: 0 0;
   background-color: currentColor;
-  -webkit-mask: /assets/uswds/img/usa-icons/launch.svg no-repeat center/contain;
+  -webkit-mask: url("/assets/uswds/img/usa-icons/launch.svg") no-repeat center/contain;
   width: 1.75ex;
   background-position: center;
   content: "";
